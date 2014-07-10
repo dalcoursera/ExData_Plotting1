@@ -25,7 +25,7 @@ datetime <- as.POSIXct(strptime(paste(twodaydata$Date, twodaydata$Time), "%d/%m/
 png(filename = "plot4.png")
 par(mfrow = c(2, 2), mar = c(5, 4, 1, 1), oma = c(0, 0, 2, 0))
 
-# Upper left histogram
+# Upper left line graph
 plot(datetime, twodaydata$GAP, type = "l", xlab = "", ylab = "Global Active Power", main = "")
 
 # Upper right line graph
